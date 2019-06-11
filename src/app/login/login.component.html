@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm" >
+  <div class="input-field">
+    <label for="email">Email</label>
+    <input type="text" formControlName="email" autocomplete="off">
+  </div>
+  <div class="input-field">
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" autocomplete="off">
+  </div>
+  <div class="input-field">
+    <button type="submit" class="btn" (click)="login()">Submit</button>
+    <a (click)="moveToRegister()" class="btn">Register</a>
+  </div>
+</form>

@@ -1,0 +1,20 @@
+:root{
+  --colortxt:#fff;
+}
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+a{
+  color:var(--colortxt);
+  text-decoration: none;
+}
+.fullPage{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+nav{
+  box-shadow:none;
+}

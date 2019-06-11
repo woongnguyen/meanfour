@@ -1,0 +1,31 @@
+<form [formGroup]="registerForm">
+  <div class="col m6 l6 s12 input-field">
+    <label for="username">Username</label>
+    <input type="text" formControlName="username" autocomplete="off">
+  </div>
+  <div class="col m6 l6 s12 input-field">
+    <label for="fullname">Fullname</label>
+    <input type="text" formControlName="fullname" autocomplete="off">
+  </div>
+
+  <div class="col m6 l6 s12 input-field">
+    <label for="email">Email</label>
+    <input type="text" formControlName="email" autocomplete="off">
+  </div>
+  <div class="col m6 l6 s12 input-field">
+    <label for="phone">Phone number</label>
+    <input type="text" formControlName="phone" autocomplete="off">
+  </div>
+  <div class="col m6 l6 s12 input-field">
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" autocomplete="off">
+  </div>
+  <div class="col m6 l6 s12 input-field">
+    <label for="confirmpass">Confirm Password</label>
+    <input type="password" formControlName="cpass" autocomplete="off">
+  </div>
+  <div class="col s12 l12 input-field">
+    <button type="submit" class="btn waves-effect" (click)="register()">Submit</button>
+    <a class="btn" (click)="moveToLogin()">Login</a>
+  </div>
+</form>
